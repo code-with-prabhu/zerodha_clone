@@ -1,9 +1,10 @@
 import React from 'react'
+import HomePage from './landing_page/home/HomePage'
 
 const App = () => {
   return (
-    <div className='text-gray-600 mb-6 h-screen bg-amber-300'>
-      main tab
+    <div >
+      <HomePage/>
     </div>
   )
 }

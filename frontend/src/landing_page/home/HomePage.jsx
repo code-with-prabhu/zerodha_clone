@@ -1,10 +1,10 @@
 import React from 'react'
-import Navbar from './Navbar'
 import Hero from './Hero'
 import Stats from './Stats'
-import Awards from './Awards'
 import Education from './Education'
 import Pricing from './Pricing'
+import Navbar from '../Navbar'
+import OpenAcc from '../OpenAcc'
 
 const HomePage = () => {
   return (
@@ -12,9 +12,9 @@ const HomePage = () => {
       <Navbar/>
       <Hero/>
       <Stats/>
-      <Awards/>
-      <Education/>
       <Pricing/>
+      <Education/>
+      <OpenAcc/>
     </div>
   )
 }
