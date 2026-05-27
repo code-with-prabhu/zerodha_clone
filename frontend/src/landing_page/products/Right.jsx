@@ -1,11 +1,43 @@
-import React from 'react'
+import React from "react";
 
-const Right = () => {
+const Right = ({ imageURL, productName, productDesription, learnMore }) => {
   return (
-    <div>
+    <div className="container mx-auto px-8 py-20">
+  
+  <div className="flex flex-col md:flex-row items-center justify-between gap-24">
+    
+    {/* Left Section */}
+    <div className="md:w-1/2 px-6">
       
-    </div>
-  )
-}
+      <h1 className="text-4xl font-medium text-gray-800 mb-8">
+        {productName}
+      </h1>
 
-export default Right
+      <p className="text-gray-600 text-lg leading-10 tracking-wide mb-10">
+        {productDesription}
+      </p>
+
+      <a
+        href={learnMore}
+        className="text-blue-600 hover:text-blue-700 text-xl transition inline-flex items-center gap-3"
+      >
+        Learn More
+        <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    {/* Right Section */}
+    <div className="md:w-1/2 flex justify-center">
+      <img
+        src={imageURL}
+        alt={productName}
+        className="w-full max-w-2xl"
+      />
+    </div>
+
+  </div>
+</div>
+  );
+};
+
+export default Right;
