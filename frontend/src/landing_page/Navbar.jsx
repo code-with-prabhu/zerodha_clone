@@ -30,7 +30,7 @@ const Navbar = () => {
         </li>
 
         <li>
-          <Link to="/produt" className="hover:text-blue-600 transition">
+          <Link to="/product" className="hover:text-blue-600 transition">
             Product
           </Link>
         </li>

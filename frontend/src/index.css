@@ -13,3 +13,41 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#supportHero {
+  background-color: rgb(56, 126, 209);
+  color: white;
+  width: 100%;
+  padding: 50px 0;
+}
+
+#supportHero a {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: 0.3s;
+}
+
+#supportHero a:hover {
+  color: #e5e7eb;
+}
+
+#supportWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+#supportHero input {
+  padding: 20px 25px;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: #374151;
+  margin-top: 20px;
+}
