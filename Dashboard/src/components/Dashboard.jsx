@@ -6,9 +6,12 @@ import Position from './Position';
 import Funds from './Funds';
 import Apps from './Apps';
 import Summary from './Summary';
+import WatchList from './WatchList';
 const Dashboard = () => {
   return (
-    <div>
+    <div className="dashboard-container">
+      <WatchList/>
+    <div className='content'>
       <Routes>
        <Route exact path="/" element={<Summary />} />
           <Route path="/order" element={<Order/>} />
@@ -17,6 +20,7 @@ const Dashboard = () => {
           <Route path="/funds" element={<Funds />} />
           <Route path="/apps" element={<Apps />} />
       </Routes>
+    </div>
     </div>
   )
 }
