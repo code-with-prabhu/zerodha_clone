@@ -15,7 +15,7 @@ const Menu = () => {
   const activeMenuClass = "menu selected";
   return (
     <div className='menu-container'>
-      <img src="logo.png" alt="Logo" className='w-12'/>
+      <Link to='/'><img src="logo.png" alt="Logo" className='w-12'/></Link>
       <div className='menus'>
         <ul>
           <li><Link to="/" onClick={() => handleMenuClick(0)}><p className= {selectedMenu === 0 ? activeMenuClass: menuClass}>Dashboard</p></Link></li>
