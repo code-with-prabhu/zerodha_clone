@@ -1,5 +1,5 @@
 import React from 'react'
-
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 const Left = ({
   imageURL,
   productName,
@@ -42,7 +42,7 @@ const Left = ({
               className="text-blue-600 hover:text-blue-700 transition inline-flex items-center gap-2"
             >
               Try Demo
-              <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+              <ArrowForwardIcon fontSize="sm"/>
             </a>
 
             <a
@@ -50,7 +50,7 @@ const Left = ({
               className="text-blue-600 hover:text-blue-700 transition inline-flex items-center gap-2"
             >
               Learn More
-              <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+              <ArrowForwardIcon fontSize="sm"/>
             </a>
 
           </div>
