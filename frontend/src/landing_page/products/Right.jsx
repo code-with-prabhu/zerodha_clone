@@ -1,5 +1,5 @@
 import React from "react";
-
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 const Right = ({ imageURL, productName, productDesription, learnMore }) => {
   return (
     <div className="container mx-auto px-8 py-20">
@@ -22,7 +22,7 @@ const Right = ({ imageURL, productName, productDesription, learnMore }) => {
         className="text-blue-600 hover:text-blue-700 text-xl transition inline-flex items-center gap-3"
       >
         Learn More
-        <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+        <ArrowForwardIcon fontSize="sm" />
       </a>
     </div>
 

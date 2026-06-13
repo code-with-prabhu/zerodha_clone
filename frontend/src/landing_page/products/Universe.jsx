@@ -1,6 +1,7 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 const Universe = () => {
+  const navigate = useNavigate();
   return (
    <div className="container max-w-5xl mx-auto mt-20 px-6 font-sans">
   
@@ -101,7 +102,7 @@ const Universe = () => {
 
   {/* Button */}
   <div className="flex justify-center mt-16 mb-10">
-    <button className="bg-[#387ed1] hover:bg-[#2268ba] text-white text-[1.1rem] font-medium px-8 py-2.5 rounded transition">
+    <button onClick={() => navigate('/signup')} className="bg-[#387ed1] hover:bg-[#2268ba] text-white text-[1.1rem] font-medium px-8 py-2.5 rounded transition">
       Sign up for free
     </button>
   </div>

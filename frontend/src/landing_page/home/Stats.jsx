@@ -1,8 +1,8 @@
 import React from "react";
-
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 const Stats = () => {
   return (
-    <div className="container mx-auto p-5 px-4">
+    <div className="container mx-auto p-5 px-4 mt-5">
       <div className="flex flex-col md:flex-row p-5 items-center">
         {/* Left Section */}
         <div className="md:w-1/2 p-5">
@@ -55,7 +55,7 @@ const Stats = () => {
               className="text-blue-600 hover:text-blue-700 transition flex items-center gap-2"
             >
               Explore our products
-              <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+              <ArrowForwardIcon fontSize="sm"/>
             </a>
 
             <a
@@ -63,7 +63,7 @@ const Stats = () => {
               className="text-blue-600 hover:text-blue-700 transition flex items-center gap-2"
             >
               Try Kite demo
-              <i class="fa-solid fa-arrow-right"></i>
+              <ArrowForwardIcon fontSize="sm"/>
             </a>
           </div>
         </div>

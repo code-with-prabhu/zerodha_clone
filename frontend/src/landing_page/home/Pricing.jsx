@@ -1,27 +1,27 @@
 import React from 'react'
-
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 const Pricing = () => {
   return (
-    <div className="container mx-auto p-5 px-4">
+    <div className="container mx-auto p-5 px-4 mt-10">
   <div className="flex flex-col md:flex-row items-start gap-10">
     
     {/* Left Section */}
     <div className="md:w-1/3">
-      <h1 className="mb-3 text-3xl font-bold">
+      <h1 className="text-3xl md:text-[32px] font-medium text-[#424242] mb-5 leading-tight">
         Unbeatable pricing
       </h1>
 
-      <p className="text-gray-600 leading-7 mb-4">
+      <p className="text-lg text-[#424242] leading-relaxed mb-3">
         We pioneered the concept of discount broking and price transparency
         in India. Flat fees and no hidden charges.
       </p>
 
       <a
         href=""
-        className="text-blue-600 hover:text-blue-700 transition flex items-center gap-2"
+        className="text-[#387ed1] hover:text-[#2d65a8] transition flex items-center gap-2"
       >
         See Pricing
-        <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+        <ArrowForwardIcon fontSize="sm"/>
       </a>
     </div>
 

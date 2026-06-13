@@ -1,5 +1,5 @@
 import React from "react";
-
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 const Hero = () => {
   return (
     <div className="container mx-auto border-b border-gray-300 mb-5 p-12 m-12">
@@ -17,7 +17,7 @@ const Hero = () => {
             className="text-blue-600 hover:text-blue-700 transition inline-flex items-center gap-2 no-underline"
           >
             investment offerings
-            <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+            <ArrowForwardIcon fontSize="sm"/>
           </a>
         </p>
       </div>
