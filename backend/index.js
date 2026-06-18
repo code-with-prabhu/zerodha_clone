@@ -8,9 +8,18 @@ const uri = process.env.MONGO_URL;
 const mongoose = require('mongoose');
 const {HoldingsModel} = require('./model/HoldingsModel');
 const {PositionsModel} = require('./model/PositionsModel');
+const cookieParser = require("cookie-parser");
+const authRoute = require("./routes/authRoute");
 
-app.use(cors());
+
+app.use(
+  cors({
+    origin: "http://localhost:5173", // Vite frontend
+    credentials: true,
+  })
+);
 app.use(bodyParser.json());
+app.use(cookieParser());
 
 app.get("/allHoldings", async (req, res) => {
   let allHoldings = await HoldingsModel.find({});
@@ -22,19 +31,19 @@ app.get("/allPositions", async (req, res) => {
   res.json(allPositions);
 });
 
-
+app.use("/api/auth", authRoute);
 
 
 
 mongoose.connect(uri)
 .then(() => {
-    console.log("✅ MongoDB Connected");
+    console.log("MongoDB Connected");
 
     app.listen(port, () => {
-        console.log(`✅ Server running on port ${port}`);
+        console.log(`Server running on port ${port}`);
     });
 })
 .catch((err) => {
-    console.error("❌ MongoDB Connection Error");
+    console.error("MongoDB Connection Error");
     console.error(err);
 });
