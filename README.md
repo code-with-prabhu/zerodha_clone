@@ -2,6 +2,10 @@
 
 A full-stack Zerodha-inspired stock trading platform clone built using React, Node.js, Express, and MongoDB. This project replicates the core user experience of Zerodha, including authentication, portfolio management, holdings display, and a modern responsive user interface.
 
+## 🔗 LiveLinks
+* MainSite - https://zerodha-clone-1-adqq.onrender.com
+* Dashboard- https://zerodha-dashboard-xkcw.onrender.com
+
 ## 🚀 Features
 
 ### Landing Page
